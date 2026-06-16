@@ -1,0 +1,232 @@
+:root {
+    --color-general: #666;
+    --color-titulos: #000;
+    --fondo-footer: #22202e;
+    --color-footer: #CCC;
+    --color-dorado: #c5a880;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: var(--color-general);
+    font-size: 15px;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+#main-nav {
+    border-bottom: 1px solid #f9f9f9;
+    padding: 10px 0;
+}
+
+.navbar-logo {
+    max-height: 75px;
+}
+
+#main-nav .nav-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #000000 !important;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+}
+
+#main-nav .nav-link:hover, 
+#main-nav .nav-link.active {
+    color: var(--color-dorado) !important;
+}
+
+#hero {
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-img-container {
+    padding: 0;
+    width: 100%;
+}
+
+.carousel-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.btn-order {
+    font-family: 'Lora', serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #c09d6c;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e2d1b9;
+    padding: 11px 45px;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-order:hover {
+    background-color: #c09d6c;
+    color: #ffffff;
+    border-color: #c09d6c;
+}
+
+/* --- SOLUCIÓN DE CAJAS NEGRAS CUADRADAS PARA LAS FLECHAS --- */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 45px !important;
+    height: 45px !important;
+    background-color: #000000 !important;
+    opacity: 1 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    position: absolute !important;
+    z-index: 15 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #1a1a1a !important;
+}
+
+.carousel-control-prev { left: 0px !important; }
+.carousel-control-next { right: 0px !important; }
+
+.carousel-control-prev-icon {
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.badge-discount {
+    position: absolute;
+    top: 60px;
+    left: 15%;
+    width: 85px;
+    height: 85px;
+    background-color: #c49a45;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px dashed #ffffff;
+}
+
+.discount-text {
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#delicieux h2 {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--color-titulos);
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+#delicieux .subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: var(--color-titulos);
+    font-weight: 700;
+}
+
+#delicieux h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-titulos);
+    letter-spacing: 1px;
+}
+
+#delicieux .date {
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-titulos);
+    margin-bottom: 12px;
+}
+
+#delicieux p {
+    font-size: 0.95rem;
+    color: var(--color-general);
+}
+
+.baker-img {
+    max-height: 420px;
+}
+
+#intro .quote {
+    font-style: italic;
+    font-size: 1.35rem;
+    color: #333333;
+    line-height: 1.9;
+    border: none;
+}
+
+#intro .author-name {
+    font-size: 0.85rem;
+    color: #999999;
+}
+
+#intro .brand-signature {
+    max-width: 110px;
+}
+
+#footer {
+    background-color: var(--fondo-footer);
+    color: var(--color-footer);
+}
+
+#footer h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer p {
+    color: var(--color-footer);
+    line-height: 1.6;
+}
+
+.footer-logo {
+    max-height: 80px;
+}
+
+.payment-icons img {
+    max-height: 22px;
+    opacity: 0.8;
+}
